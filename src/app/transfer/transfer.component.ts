@@ -31,7 +31,7 @@ export class TransferComponent implements OnInit {
    console.log(this.beneficiaryAccount);
    this.currentUserIndex = this.users.indexOf(this.beneficiaryAccount);
    console.log(this.currentUserIndex);
-   if(this.transferAmount < this.currentUser['balance'] && this.transferAccount!=this.currentUser['acctNum']){
+   if(this.transferAmount < this.currentUser['balance'] && this.transferAccount!=this.currentUser['acctNum'] && this.password == this.currentUser['password']){
      this.beneficiaryAccount['balance'] += Number(this.transferAmount);
      this.currentUser['balance'] -= Number(this.transferAmount); 
      console.log(this.currentUser);
