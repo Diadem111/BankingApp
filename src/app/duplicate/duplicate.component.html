@@ -1,41 +1,109 @@
-<section class="container-fluid bg-primary" id="sec">
-    <div class="container-fluid" id="wrapping">
-    <div class="container d-flex bg-success" id="div1">
-        <section class="row">
-            <div class="col" id="col" style="background-color: rgb(22, 15, 15);">
-                <div>
-                    <fa-icon [icon]="vertical" id="vert"></fa-icon>
-                </div>
-             <div id="span1">
-                <fa-icon [icon]="envelope" style="width: 25px;margin-right: 16px; padding: 5px 5px;
-                border-radius:50%;  color: rgb(211, 211, 226); " id="icon"></fa-icon>
-                <p id="para">Total balance</p>
-                <div style="margin-top: 10px;"><h6 id="para2" >{{b |currency:'NGN':'symbol-narrow'}}</h6></div>
-             </div>
+    <section id="sec1">
+        <nav class="navbar navbar-expand-sm " id="nav">
+            <div class="container-fluid">
+            <span class="navbar-text sticky-top" >Dashboard</span>
+            <ul>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <!-- <label for="menu" id="menuBar">
+            
+            </label> -->
             </div>
-            <div class="col" id="col">
-                <div>
+        </nav>
+        
+    <!-- //the sideBar start here -->
+    <section id="sidebar">
+        <h5>Easy Bank</h5>
+        <fa-icon [icon]="bar" id="bar"></fa-icon>
+        <h6>MANAGE</h6>
+
+        <ul>
+            <li><a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]={exact:true}><fa-icon [icon]="dashBoard"  style="width: 25px; color: rgb(21, 21, 240);margin-right: 16px;"  id="icon"></fa-icon><span>DashBoard</span></a></li>
+            <li><a routerLinkActive="active" routerLink="/deposit"><fa-icon [icon]="chartOf" style="width: 25px;color: rgb(155, 150, 150);margin-right: 16px;" id="icon"></fa-icon><span >Deposit</span></a></li>
+            <li><a routerLinkActive="active" routerLink="/transfer"><fa-icon [icon]="wallet" style="width: 25px;color: rgb(155, 150, 150);margin-right: 16px;" id="icon" ></fa-icon><span>Transfer</span></a></li>
+            <li><a routerLinkActive="active" routerLink="transfer"><fa-icon [icon]="bell" style="width: 25px;color: rgb(155, 150, 150);margin-right: 16px;" id="icon"></fa-icon><span>Notification</span></a></li>
+             <li><a href="#" id="logout"><span>logout</span></a></li>
+           </ul>
+    </section>
+
+    <!-- The main page begins from here. -->
+    <section id="main">
+    <div id="main2">
+  <!-- this is the container container the part of graph -->
+        <section id="div1" class=" container d-flex">
+            <section class="row">
+                <div class="col" id="col" style="background-color: rgb(22, 15, 15);">
+                    <div>
+                        <fa-icon [icon]="vertical" id="vert"></fa-icon>
+                    </div>
+                 <div id="span1">
+                    <fa-icon [icon]="envelope" style="width: 25px;margin-left:50px; padding: 5px 5px;
+                    border-radius:50%;  color: rgb(211, 211, 226); " id="icon"></fa-icon>
+                    <p id="para">Total balance</p>
+                    <div><h6 id="para2" >{{b|currency:'NGN':'symbol-narrow'}}</h6></div>
+                 </div>
+                </div>
+                <div class="col" id="col">
+                    <div>
+                        <fa-icon [icon]="vertical" id="vert"></fa-icon>
+                    </div>
+                    <div id="span1">
+                        <fa-icon [icon]="atm" style="color: black;margin-left:1px; "></fa-icon>
+                        <p id="para">Total balance</p>
+                        <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6></div>                </div>
+                </div>
+                <div class="col" id="col"> <div>
                     <fa-icon [icon]="vertical" id="vert"></fa-icon>
                 </div>
                 <div id="span1">
-                    <fa-icon [icon]="atm" style="color: black;margin-left:1px; "></fa-icon>
+                    <fa-icon [icon]="user" style="color: black;margin-left:1px; "></fa-icon>
                     <p id="para">Total balance</p>
-                    <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6></div>                </div>
-            </div>
-            <div class="col" id="col"> <div>
-                <fa-icon [icon]="vertical" id="vert"></fa-icon>
-            </div>
-            <div id="span1">
-                <fa-icon [icon]="user" style="color: black;margin-left:1px; "></fa-icon>
-                <p id="para">Total balance</p>
-                <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6>
-                </div>      
-                      </div>
-                    </div>
+                    <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6>
+                    </div>      
+                          </div>
+                        </div>
+            </section>
+            <!-- the end of the balance point   -->
+
         </section>
+        <section id="graph">
+            <h6 style="position: absolute; left:20px;top: 10px;font-weight: bold;">Overvier</h6>
+            <span>{{date|date:'shortTime'}}</span>
+             <div>
+             </div>
+          </section>
+          <!-- the end of the bar chart -->
     </div>
-    <section id="class1">
-        <h4>Activity</h4>
+    <div id="sideGraph">
+        <h4 id="h4">Activity</h4>
+        <div id="horizontal">
+          <fa-icon [icon]="horizontal" id="horizontal"></fa-icon>
+      </div>
+      <div id="circle">
+        <div style="position: absolute;top:35px;left:40px">
+        {{3.20|currency:'USD'}}
+        <br>
+        <small>Online shop</small></div>
+      </div>
+      <div id="smallCircle">
+        <div style="position: absolute;top: 10px;left:20px">{{1.321|currency:'USD'}}
+          <p>Tax</p></div>  
+      </div>
+      <div id="smallestCircle">
+       <div style="position: absolute;top: 10px;left:12px">
+        {{0.21|currency:'USD'}}
+        <p>Food</p>
+       </div>
+      </div>
+      <section id="rectangle">
+     <h2 id="compass">Comparison  (Month)</h2>
+      <div id="myDiv"><div id="text">This month </div>
+      <div id="green">
+        <div id="blue"></div>
+      </div></div>
+      <div id="myNet"><div id="text1">Last month</div>
+    <div id="green1">
+      <div id="blue1"></div>
+    </div>
+    </div>    
     </section>
-</div>
-</section>           

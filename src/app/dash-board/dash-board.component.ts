@@ -25,7 +25,7 @@ import {faEllipsisH} from  '@fortawesome/free-solid-svg-icons';
 export class DashBoardComponent implements OnInit {
   public home : any = faHome;
   public dashBoard : any = faDashboard;
-  public chart : any = faChartLine;
+  public chartOf : any = faChartLine;
   public wallet : any = faWallet;
   public bell : any = faBell;
   public bar : any = faBars;
@@ -42,6 +42,9 @@ export class DashBoardComponent implements OnInit {
  public userBalance : any = '';
  public totalBalance : any = '';
  public b : any;
+ public ctx :any;
+ public chart : any;
+ 
 
 
 
