@@ -1,0 +1,41 @@
+<section class="container-fluid bg-primary" id="sec">
+    <div class="container-fluid" id="wrapping">
+    <div class="container d-flex bg-success" id="div1">
+        <section class="row">
+            <div class="col" id="col" style="background-color: rgb(22, 15, 15);">
+                <div>
+                    <fa-icon [icon]="vertical" id="vert"></fa-icon>
+                </div>
+             <div id="span1">
+                <fa-icon [icon]="envelope" style="width: 25px;margin-right: 16px; padding: 5px 5px;
+                border-radius:50%;  color: rgb(211, 211, 226); " id="icon"></fa-icon>
+                <p id="para">Total balance</p>
+                <div style="margin-top: 10px;"><h6 id="para2" >{{b |currency:'NGN':'symbol-narrow'}}</h6></div>
+             </div>
+            </div>
+            <div class="col" id="col">
+                <div>
+                    <fa-icon [icon]="vertical" id="vert"></fa-icon>
+                </div>
+                <div id="span1">
+                    <fa-icon [icon]="atm" style="color: black;margin-left:1px; "></fa-icon>
+                    <p id="para">Total balance</p>
+                    <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6></div>                </div>
+            </div>
+            <div class="col" id="col"> <div>
+                <fa-icon [icon]="vertical" id="vert"></fa-icon>
+            </div>
+            <div id="span1">
+                <fa-icon [icon]="user" style="color: black;margin-left:1px; "></fa-icon>
+                <p id="para">Total balance</p>
+                <div style="margin-top: 10px;"><h6 id="para2" style="color: black;">{{b |currency:'NGN':'symbol-narrow'}}</h6>
+                </div>      
+                      </div>
+                    </div>
+        </section>
+    </div>
+    <section id="class1">
+        <h4>Activity</h4>
+    </section>
+</div>
+</section>           

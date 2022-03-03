@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration:none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sec{
+    width: 100%;
+    position: absolute;
+    /* top: 10px; */
+    box-sizing: border-box;
+    /* padding: 100px 0; */
+    /* height: 100%; */
+    height: 100%;
+    background-color: gray;
+    /* line-height: 100%; */
+}
+#class1{position: absolute;
+    right: 0;
+    width:300px;
+    height: 400px;
+    
+    /* position:fixed; */
+}
+#wrapping{
+    margin: auto;
+    border: 3px solid red;
+    width:60%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:pink;
+    height: 100%;
+}
+#div1{
+    width:500px;
+    height: 100px;
+    box-sizing: border-box;
+}
+#col{
+    /* position: absolute; */
+    /* top:10; */
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius:0 5px 5px 0;
+    background-color:white;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#vert{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    color: rgb(177, 165, 165);
+
+}
+#span1{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+#para{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(153, 142, 142);
+
+}
+#para2{
+font-size: 15px;
+font-weight: bold;
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

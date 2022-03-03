@@ -1,0 +1,10 @@
+<div class="mt-3 mb-2">
+    <input type="text" class="form-control" placeholder="Account number" name="Firstname" [(ngModel)]="transferAccount">
+    </div>
+    <div class="mb-2">
+        <input type="text" name="lastname" id="" placeholder="Amount" class="form-control" [(ngModel)]="transferAmount">
+    </div>
+    <div class=" mb-2">
+        <input name="confirm-password" type="password" id="" placeholder="password" class="form-control" [(ngModel)]="password" >
+    </div>
+     <button type="button" class="btn btn-block w-75 mx-auto" data-toggle="modal" data-target="#myModal" style="border-radius:5%;background-color:blue; color:white"(click)="transferDetail()" >Submit</button>

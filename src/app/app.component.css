@@ -1,0 +1,19 @@
+#sec1{
+background-color: rgb(252, 250, 250);
+}
+#btn1{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:normal;
+    height: 30px;
+
+}
+#btn2{
+    background-color:rgb(10, 138, 138);
+    height: 30px;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:normal;
+    border-radius: 10%;
+
+}
