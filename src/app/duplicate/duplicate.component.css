@@ -8,7 +8,7 @@
 }
 #nav{
     line-height: 60px;
-    background-color: #102951;
+    background-color:rgb(255, 255,255);
     width: 100%;
 }
 #nav span{
@@ -195,7 +195,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     right:30px;
     border-radius: 10px;
     top:15px;
-    background-color:white;
+    background-color:rgb(255, 255,255);
 
 }
 #h4{
@@ -228,7 +228,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
         font-weight: bold;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color:rgb(245,247,249);
+        background-color:#f5f7f9;
         left:35px; 
         top:130px; 
         text-align: center;
@@ -245,7 +245,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         border-radius: 50%;
         background-color:rgb(8, 0, 0);
         left:97px; 
-        color:rgb(255,255,255);
+        color:#ffff;
         top:170px; 
         box-shadow: 1px 1px 1px 1px black;
     }
@@ -257,7 +257,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         height: 95px;
         /* border: 1px solid yellow; */
         border-radius: 5px;
-        background-color: rgb(8, 66, 124);
+        background-color:#f5f7f9;
     }
     #compass{
         font-size: 16px;
@@ -337,6 +337,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 2px;
         margin-left:6px;
         
+    }
+    #lastSection{
+        position: absolute;
+        left: 19px;
+        bottom:0px;
+        height:95px;
+        background-color:gold;
+        width: 95.2%;
+        border-radius: 5px;
+    }#trans{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height:35px;
+        position: absolute;
+        left: 15px;
+        /* margin-left: 100px; */
     }
 
 
